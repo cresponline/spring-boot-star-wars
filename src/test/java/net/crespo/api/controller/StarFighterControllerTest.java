@@ -1,4 +1,4 @@
-package net.birelian.api.controller;
+/*package net.birelian.api.controller;
 
 import io.restassured.http.ContentType;
 import net.birelian.model.StarFighter;
@@ -104,3 +104,4 @@ public class StarFighterControllerTest {
 	}
 
 }
+*/
