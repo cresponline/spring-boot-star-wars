@@ -1,6 +1,6 @@
-package net.birelian.service;
+package net.crespo.service;
 
-import net.birelian.model.StarFighter;
+import net.crespo.model.StarFighter;
 
 import java.util.List;
 

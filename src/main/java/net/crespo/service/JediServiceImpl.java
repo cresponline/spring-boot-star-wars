@@ -1,7 +1,7 @@
-package net.birelian.service;
+package net.crespo.service;
 
-import net.birelian.model.Jedi;
-import net.birelian.repository.JediRepository;
+import net.crespo.model.Jedi;
+import net.crespo.repository.JediRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

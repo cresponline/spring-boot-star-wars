@@ -1,8 +1,8 @@
-/*package net.birelian.api.controller;
+package net.crespo.api.controller;
 
 import io.restassured.http.ContentType;
-import net.birelian.model.Jedi;
-import net.birelian.repository.JediRepository;
+import net.crespo.model.Jedi;
+import net.crespo.repository.JediRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,6 +14,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import io.restassured.RestAssured;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -51,7 +52,10 @@ public class JediControllerTest {
     private void initializeDatabase() {
 
         repository.deleteAll();
-        jedis = NAMES.stream().map(Jedi::new).collect(Collectors.toList());
+
+        jedis = new ArrayList<>();
+        jedis.add(new Jedi("Yoda", "Green"));
+        jedis.add(new Jedi("Obi", "Blue"));
         repository.save(jedis);
     }
 
@@ -73,7 +77,7 @@ public class JediControllerTest {
     @Test
     public void postANewJediShouldReturnAJediWithId() {
 
-        Jedi jedi = new Jedi("Test");
+        Jedi jedi = new Jedi("Mace Windu", "Purple");
 
         given()
                 .body(jedi)
@@ -96,7 +100,7 @@ public class JediControllerTest {
 
                 .when()
                 .delete(JediController.JEDI_BASE_URL_MAPPING
-                        + JediController.JEDI_MAPPING.replace("{JediId}", String.valueOf(jediToDelete.getId())))
+                        + JediController.JEDI_MAPPING.replace("{jediId}", String.valueOf(jediToDelete.getId())))
 
                 .then()
                 .statusCode(200);
@@ -104,4 +108,3 @@ public class JediControllerTest {
     }
 
 }
-*/

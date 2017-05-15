@@ -1,6 +1,6 @@
-package net.birelian.repository;
+package net.crespo.repository;
 
-import net.birelian.model.Jedi;
+import net.crespo.model.Jedi;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

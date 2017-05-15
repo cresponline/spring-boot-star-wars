@@ -1,8 +1,8 @@
-/*package net.birelian.api.controller;
+package net.crespo.api.controller;
 
 import io.restassured.http.ContentType;
-import net.birelian.model.StarFighter;
-import net.birelian.repository.StarFighterRepository;
+import net.crespo.model.StarFighter;
+import net.crespo.repository.StarFighterRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -104,4 +104,3 @@ public class StarFighterControllerTest {
 	}
 
 }
-*/

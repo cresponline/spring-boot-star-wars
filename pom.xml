@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>net.birelian</groupId>
-    <artifactId>star-fighter</artifactId>
+    <groupId>net.crespo</groupId>
+    <artifactId>star-wars</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>star-fighter</name>
-    <description>Star Fighter PoC</description>
+    <name>Star Wars</name>
+    <description>Star Wars API</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

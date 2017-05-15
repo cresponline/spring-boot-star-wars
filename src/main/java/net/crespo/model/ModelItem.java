@@ -1,4 +1,4 @@
-package net.birelian.model;
+package net.crespo.model;
 
 import java.io.Serializable;
 

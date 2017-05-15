@@ -1,4 +1,4 @@
-package net.birelian.model;
+package net.crespo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,8 +15,9 @@ public class Jedi extends ModelItem {
 
     private static final long serialVersionUID = 5548518077813233172L;
 
-    public Jedi(String name) {
+    public Jedi(String name, String saber_color) {
         this.name = name;
+        this.saber_color = saber_color;
     }
 
     @Id
@@ -26,7 +27,7 @@ public class Jedi extends ModelItem {
     @Column(nullable = false)
     private String name;
 
-    @Column
+    @Column(nullable = false)
     private String saber_color;
 
 }

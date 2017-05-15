@@ -1,6 +1,6 @@
-package net.birelian.service;
+package net.crespo.service;
 
-import net.birelian.model.Jedi;
+import net.crespo.model.Jedi;
 
 import java.util.List;
 

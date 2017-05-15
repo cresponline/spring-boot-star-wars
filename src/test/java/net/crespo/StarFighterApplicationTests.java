@@ -1,4 +1,4 @@
-package net.birelian;
+package net.crespo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

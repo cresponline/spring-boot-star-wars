@@ -2,16 +2,25 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
     <changeSet author="adama (generated)" id="1478256700848-1">
-        <createTable catalogName="test" tableName="star_fighter">
-            <column autoIncrement="true" name="id" type="INT(10)">
+        <createTable catalogName="DEV_star_wars" tableName="star_fighter">
+            <column autoIncrement="true" name="id" type="INT(11)">
                 <constraints primaryKey="true"/>
             </column>
-            <column name="height" type="INT(10)"/>
-            <column name="length" type="INT(10)"/>
-            <column name="name" type="VARCHAR(255)">
+            <column name="height" type="INT(11)"/>
+            <column name="length" type="INT(11)"/>
+            <column name="name" type="VARCHAR(45)">
                 <constraints nullable="false"/>
             </column>
-            <column name="width" type="INT(10)"/>
+            <column name="width" type="INT(11)"/>
+        </createTable>
+        <createTable catalogName="DEV_star_wars" tableName="jedi">
+            <column autoIncrement="true" name="id" type="INT(11)">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="VARCHAR(45)"/>
+            <column name="saber_color" type="VARCHAR(45)">
+                <constraints nullable="false"/>
+            </column>
         </createTable>
     </changeSet>
 </databaseChangeLog>

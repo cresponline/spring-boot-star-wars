@@ -1,6 +1,6 @@
-package net.birelian.repository;
+package net.crespo.repository;
 
-import net.birelian.model.StarFighter;
+import net.crespo.model.StarFighter;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,7 +1,7 @@
-package net.birelian.service;
+package net.crespo.service;
 
-import net.birelian.model.StarFighter;
-import net.birelian.repository.StarFighterRepository;
+import net.crespo.model.StarFighter;
+import net.crespo.repository.StarFighterRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

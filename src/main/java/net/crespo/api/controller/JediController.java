@@ -1,9 +1,9 @@
-package net.birelian.api.controller;
+package net.crespo.api.controller;
 
 import java.util.List;
 
-import net.birelian.model.Jedi;
-import net.birelian.service.JediService;
+import net.crespo.model.Jedi;
+import net.crespo.service.JediService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;

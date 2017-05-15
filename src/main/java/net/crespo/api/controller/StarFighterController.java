@@ -1,9 +1,9 @@
-package net.birelian.api.controller;
+package net.crespo.api.controller;
 
 import java.util.List;
 
-import net.birelian.model.StarFighter;
-import net.birelian.service.StarFighterService;
+import net.crespo.model.StarFighter;
+import net.crespo.service.StarFighterService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
