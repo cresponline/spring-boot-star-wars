@@ -17,7 +17,6 @@ import io.restassured.RestAssured;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.hasItems;
@@ -92,7 +91,7 @@ public class JediControllerTest {
     }
 
     @Test
-    public void deleteAStarFighterShouldReturnOk() {
+    public void deleteAJediShouldReturnOk() {
 
         Jedi jediToDelete = jedis.get(0);
 

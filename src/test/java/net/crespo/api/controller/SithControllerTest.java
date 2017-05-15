@@ -91,7 +91,7 @@ public class SithControllerTest {
     }
 
     @Test
-    public void deleteAStarFighterShouldReturnOk() {
+    public void deleteAJediShouldReturnOk() {
 
         Sith sithToDelete = siths.get(0);
 
