@@ -27,7 +27,6 @@ public class Jedi extends ModelItem {
     @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false)
     private String saber_color;
 
 }

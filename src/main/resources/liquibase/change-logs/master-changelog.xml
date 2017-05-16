@@ -19,7 +19,6 @@
             </column>
             <column name="name" type="VARCHAR(45)"/>
             <column name="saber_color" type="VARCHAR(45)">
-                <constraints nullable="false"/>
             </column>
         </createTable>
         <createTable catalogName="DEV_star_wars" tableName="sith">
@@ -28,7 +27,6 @@
             </column>
             <column name="name" type="VARCHAR(45)"/>
             <column name="saber_color" type="VARCHAR(45)">
-                <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>
