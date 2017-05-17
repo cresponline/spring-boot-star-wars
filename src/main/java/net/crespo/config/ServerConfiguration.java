@@ -17,7 +17,7 @@ public class ServerConfiguration {
                 registry.addMapping("/**")
                         .allowedOrigins("*")
                         .allowedHeaders("*")
-                        .allowedMethods("PUT", "GET", "DELETE", "POST", "PATCH", "UPDATE");
+                        .allowedMethods("*");
             }
         };
     }

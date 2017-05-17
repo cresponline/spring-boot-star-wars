@@ -1,7 +1,9 @@
 <h2>My Heroes</h2>
 <div>
-  <label>Hero name:</label> <input #heroName />
-  <button (click)="add(heroName.value); heroName.value=''">
+  <label>Hero name:</label> <input [(ngModel)]="hero.name" />
+  <br>
+  <label>Saber Color:</label> <input [(ngModel)]="hero.saber_color" />
+  <button (click)="add(hero);">
     Add
   </button>
 </div>

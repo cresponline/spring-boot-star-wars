@@ -37,13 +37,21 @@ export class HeroService {
       .catch(this.handleError);
   }
 
-  create(name: string): Promise<Hero> {
+  create(hero: Hero): Promise<Hero> {
     return this.http
-      .post(this.heroesUrl, JSON.stringify({name: name}), {headers: this.headers})
+      .post(this.heroesUrl, JSON.stringify(hero), {headers: this.headers})
       .toPromise()
       .then(res => res.json() as Hero)
       .catch(this.handleError);
   }
+
+  // create(name: string): Promise<Hero> {
+  //   return this.http
+  //     .post(this.heroesUrl, JSON.stringify({name: name}), {headers: this.headers})
+  //     .toPromise()
+  //     .then(res => res.json() as Hero)
+  //     .catch(this.handleError);
+  // }
 
   update(hero: Hero): Promise<Hero> {
     const url = `${this.heroesUrl}`;

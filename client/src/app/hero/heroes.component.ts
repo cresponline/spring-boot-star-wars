@@ -12,6 +12,7 @@ import { HeroService } from './hero.service';
 export class HeroesComponent implements OnInit {
   heroes: Hero[];
   selectedHero: Hero;
+  hero: Hero;
 
   constructor(
     private heroService: HeroService,
@@ -23,13 +24,15 @@ export class HeroesComponent implements OnInit {
         .then(heroes => this.heroes = heroes);
   }
 
-  add(name: string): void {
-    name = name.trim();
-    if (!name) { return; }
-    this.heroService.create(name)
-      .then(hero => {
-        this.heroes.push(hero);
+  add(hero: Hero): void {
+    hero.name = hero.name.trim();
+    if (!hero.name) { return; }
+    this.heroService.create(hero)
+      .then(newHero => {
+        this.heroes.push(newHero);
         this.selectedHero = null;
+        this.hero.name = '';
+        this.hero.saber_color = '';
       });
   }
 
@@ -44,6 +47,7 @@ export class HeroesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getHeroes();
+    this.hero = new Hero();
   }
 
   onSelect(hero: Hero): void {
